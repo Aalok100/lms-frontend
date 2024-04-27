@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
   margin: auto;
   max-width: 1440px;
   position: relative;
+  background-color:rgb(133, 93, 64)
 }

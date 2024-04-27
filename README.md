@@ -34,7 +34,7 @@
 
 1. install tailwind css
 ```
-    npm install -D tailwindcss
+    npm install -D tailwindcss  postcss autoprefixer
 ```
 
 2. Create config file 
@@ -44,7 +44,7 @@
 
 3. Add file extension to tailwind config file in the contents property
 ```
-    "./src/**/*.{html,js, jsx, ts,tsx}"
+    "./src/**/*.{html,js, jsx, ts,tsx}" , "./index.html"
 ```
 4. Add the taileind directive at the top of the `index.css` file
 ```
@@ -52,9 +52,14 @@
     @tailwind components;
     @tailwind utilities;
 ```
-
+5. Add the followind details in the plugin property of tailwind config
+```
+    [require("daisyui"), require("@tailwindcss/line-clamp")]
+```
 ### Adding plugins and dependencies
 ```
+
+
     npm install @reduxjs/toolkit react-redux react-router-dom react-icons react-chartjs-2 chart.js daisyui axios react-hot-toast @tailwindcss/line-clamp
 ```
 ### Configure auto import sort eslint
@@ -80,3 +85,4 @@
         "sourse.fixAll.eslint":true
     }
 ```
+
